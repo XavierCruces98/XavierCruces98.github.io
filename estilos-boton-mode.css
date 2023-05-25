@@ -1,0 +1,105 @@
+
+#foto-1{
+  position: absolute;
+  left: 8%; 
+  top: 3%;
+}
+
+/*📘📘📘📘📘📘📘📘📘📘📘📘 LIGTH MODE 📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘*/
+
+.contenedor{
+
+
+  background-color: rgb(255, 255, 255);
+  border: 6px solid  #0A3871;
+  border-radius: 50px;
+  width: 88px;
+  height: 35px;
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+}
+.contenedor-black{
+  background-color: #0A3871;
+  transition: all 0.5s;
+}
+
+.sol{
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  height: 38px;
+  width: 38px;
+
+  border: 6px solid  #0A3871;
+  border-radius: 50%;
+
+  position: relative;
+  left: -10px; 
+
+  padding: 6px;
+}
+
+.trasladar-sol-luna{
+  transition: all 0.5s;
+  transform: translateX(50px) rotate(360deg);
+} 
+
+.imagen-opacar{
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.imagen-desopacar{
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+
+/*📘📘📘📘📘📘📘📘📘📘📘 DARK MODE 📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘*/
+
+
+.contenedor-2{
+ 
+
+  background-color: #0A3871;
+  border: 6px solid  #0A3871;
+  border-radius: 50px;
+  width: 88px;
+  height: 35px; 
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.contenedor-white{
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+
+.luna {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  height: 38px;
+  width: 38px;
+
+  border: 6px solid  #0A3871;
+  border-radius: 50%;
+
+  position: relative; /* misma posicion de inicio */
+  left: -10px;  /* misma posicion de inicio */
+
+  transform: translateX(+50px) ; /* misma posicion de inicio y  le movemos tal cual arriba "+50px*/
+
+  padding: 6px;
+}
+
+.trasladar-luna-sol{
+  transition: all 0.5s;
+  transform: translateX(0px) rotate(-360deg); /*como le quitamos la clase "luna" vuelve a su poiscion normal
+  dado que la classe "luna" esta en "+x50px" , es solo cuestion de probar y probar*/
+} 
+ 
+

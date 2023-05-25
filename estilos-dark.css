@@ -1,0 +1,196 @@
+html{
+  font-size: 20px;  
+  padding: 0rem 1rem 0rem 1rem ;
+  background-color: #000000;
+  height: 100%; /* para tener el 100% de la pantalla */
+  transition:  1s;
+}
+
+/* 📕📕📕📕📕📕📕📕📕📕📕📕📕📕📕📕📕📕📕📕📕📕📕📕📕📕📕📕📕📕*/
+body{
+  height: 100%; /* alto===para tener el 100% del html*/
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-family:sans-serif;
+}
+
+header{
+  width: 100%; /* ancho===para tener el 100% del html*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+#foto-1{
+  position: absolute;
+  left: 8%; 
+  top: 3%;
+}
+
+/*📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘*/
+.cuerpo{
+  display: flex;
+  justify-content:center; /*centramos todo , menos la "navegacion, header, logo" */
+  align-items: start;
+
+  width: 100%;  /* ancho===para tener el 100% del html*/
+  height: 650px; /* altura fija =>>> los elementos del interior cuando haces zoom, NO SE DESFORMAN
+  altura variable% =>>> los elementos del interior cuando haces zoom , SI SE DESFORMAN, queda feo */
+
+  /* background-color: chartreuse; */
+  position: relative;
+  top: 3%;
+}
+
+/*📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘*/
+.caja-encriptacion{
+  width: 1000px; /*solo el 60% del ancho del "cuerpo" y el cuerpo tiene ancho = 100%del html*/
+  height: 650px;
+
+  display: flex;
+  flex-direction: column;
+  
+  align-items: start;
+
+  position: relative;
+  left: 150px;
+  /* background-color: rgb(167, 77, 3); */
+}
+.caja-encriptacion-resultado{
+  width: 320px; /*solo el 20% del ancho del "cuerpo" y el cuerpo tiene ancho = 100%del html*/
+  height:  610px; /*padding arriba padding abajo*/
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+ 
+  border-radius: 32px  ;
+  padding: 20px 20px 20px 20px ;
+  background-color: #808080; 
+
+  position: relative;
+}
+
+.contenedor-textarea-darkmode{
+  display: flex;
+}
+
+/*📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘*/
+#textarea-1{
+  width: 700px;/* nota anchos iguales */
+  height: 400px; /*fijo ==>> con esto ya no sobre pasa nada*/
+  border: none;
+
+  font-size: 35px;  
+  font-family:sans-serif;
+  color: #ffffff;
+
+  margin-top: 70px;
+  resize:none; /*nota ya no se puede modificar manualmente en la pagina web*/
+  background-color: transparent;
+}
+#textarea-1::placeholder{
+  color: #ffffff;
+}
+#textarea-2{
+  width: 100%;
+  height: 550px; /*fijo ==>> con esto ya no sobre pasa nada*/
+  border: none;
+
+  font-size: 24px;
+  font-family:sans-serif;
+  color: #ffffff;
+
+  resize:none; /*nota ya no se puede modificar manualmente en la pagina web*/
+  background-color: transparent;
+}
+
+
+
+
+textarea:focus {
+  outline: none; /* elimina el molesto borde por defecto*/
+}
+
+.caja-botones{
+
+  height: 100%; /*700px - 500px - -40px(margin-top) 20px(padding)x2 = 80 */
+  width: 700px; /* nota anchos iguales */
+
+  display: grid;
+  grid-template-columns: 50%  50% ;
+  grid-template-rows: auto  auto;
+
+  /* grid-column-gap: 10px; */
+
+  justify-content: start;
+  align-content: end;
+
+  /* background-color: aqua; */
+}
+
+span{
+  grid-column: 1 / span 2 ;
+  align-self: flex-end; 
+  margin-bottom: 20px;
+  color: white;
+}
+
+button{
+  width: 320px;
+  height: 67px;
+  border-radius: 24px;
+  color: #0A3871;
+  background-color: #D8DFE8;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#Desencriptar{
+  color: #D8DFE8;
+  background-color: #0A3871;
+
+  justify-self: end;
+  margin-bottom: 20px;
+}
+
+/*📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘📘*/
+
+.mensaje{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+
+  width: 100%; /*100% del ancho de su contenedor azul */
+  height: 500px; /*fijo ==>> con esto ya no sobre pasa nada*/
+  color: #ffffff;
+
+  margin-top: 5rem;
+  /* background-color: antiquewhite; */
+}
+
+#foto-2{
+  width: 100%; /*100% del ancho de su contenedor rosado */
+  display: block;
+}
+.mensaje h2{
+  font-size: 24px;
+  margin-top: 10%;
+  font-weight: 600;
+  line-height: 120%; 
+}
+.mensaje p{
+  font-size: 16px;
+  margin-top: 10%;
+  line-height: 140%;
+}
+
+#Copiar{
+  margin-top: auto;
+  background-color: none;
+  display: none;
+}

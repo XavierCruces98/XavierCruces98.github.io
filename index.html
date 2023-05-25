@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="reset.css"> 
+
+  <link rel="stylesheet" href="estilos-ligth.css" id="mi-hoja-css">
+  <link rel="stylesheet" href="estilos-boton-mode.css">
+
+  <title>Document</title>
+</head>
+<body>
+
+  <img src="imagenes/LogoRecortado.png" alt="" id="foto-1">
+
+
+  <main class="cuerpo">
+    
+    <!-- https://es.stackoverflow.com/questions/289413/bloquear-n%C3%BAmeros-letras-y-o-caracteres-especiales-en-un-input -->
+    <section class="caja-encriptacion">
+      
+      <!-- <textarea placeholder="Ingrese el Texto Aqui"
+      onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || 
+      event.key==` `|| event.key==`ñ` || event.key==`Enter` || event.key==`.` || event.key==`,`)"></textarea> -->
+
+      <section class="contenedor-textarea-darkmode">
+        <textarea 
+        placeholder="Ingrese el Texto Aqui" 
+        id="textarea-1"
+
+        onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || 
+        event.key==` `|| event.key==`Enter` || event.key==`.` || event.key==`,` || event.key==`?`)"
+    
+        ></textarea>
+  
+        <div class="contenedor">
+          <div class="contenedor-traslado sol">
+            <img src="imagenes/sol.png" class="imagen-dark-mode"  id="darkmode" width="37.988" height="36.660" >
+          </div>
+        </div>
+      </section>
+
+      <section class="caja-botones">
+        <span> <img src="imagenes/Vector.png" id="imagen-vector">   Solo letras minúsculas y sin acentos</span>
+        <button id="Encriptar">Encriptar</button>
+        <button id="Desencriptar">Desencriptar</button>
+  
+      </section>
+    </section>
+
+    <section class="caja-encriptacion-resultado">
+
+      <div class="mensaje">
+        <img src="imagenes/Muñeco.png" id="foto-2">
+        <h2>Ningún mensaje fue encontrado</h2>
+        <p>Ingresa el texto que desea encriptar o desencriptar.</p>
+      </div>
+
+      <button id="Copiar">Copiar</button>
+    </section>
+
+  </main>
+
+  <script src="javascript logica.js"></script>
+  <script src="javascript darkmode.js"></script>
+  
+</body>
+</html>
